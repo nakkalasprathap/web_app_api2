@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>NAF</groupId>
+  <artifactId>NAF-Core</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>NAF-Core</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.3.1</version>
+				<configuration>
+					<outputDirectory>../NAF-Scripting/libs</outputDirectory>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+  <modules>
+  <module>NAF-GenericUtility</module>
+  <module>NAF-Mobile</module>
+  <module>NAF-Reporting</module>
+  <module>NAF-Scripting</module>
+  <module>NAF-WebServices</module>
+  </modules>
+</project>
